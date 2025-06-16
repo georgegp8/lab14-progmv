@@ -31,8 +31,12 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.5"
+    }
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = "1.8"
     }
     buildFeatures {
         compose = true
@@ -40,7 +44,7 @@ android {
 }
 
 dependencies {
-    
+
     implementation ("androidx.glance:glance-appwidget:1.1.0")
     // For interop APIs with Material 3
     implementation ("androidx.glance:glance-material3:1.1.0")
